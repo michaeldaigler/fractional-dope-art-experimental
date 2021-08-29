@@ -1,0 +1,11 @@
+node_modules
+.env
+fractional-art-dope/node_modules
+fractional-art-dope/contracts/build-info
+contracts/node_modules
+contracts/OpenZeppelin
+
+#Hardhat files
+cache
+artifacts
+cache
