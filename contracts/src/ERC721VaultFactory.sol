@@ -61,7 +61,7 @@ contract ERC721VaultFactory is Ownable, Pausable {
     emit Mint(_token, _id, _listPrice, vault, vaultCount);
 
     IERC721(_token).safeTransferFrom(msg.sender, vault, _id);
-    
+
     vaults[vaultCount] = vault;
     vaultCount++;
 

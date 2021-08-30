@@ -1,3 +1,5 @@
+
+
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -21,5 +23,14 @@ module.exports = {
   solidity: "0.8.4",
   paths: {
     artifacts: './fractional-art-dope/contracts',
-  }
+  },
+  networks: {
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+      gas: 10000000000000,
+      blockGasLimit: 10000000000000000,
+      gasPrice: 0,
+      initialBaseFeePerGas: 0,
+    },
+  },
 };
